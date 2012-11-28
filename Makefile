@@ -13,7 +13,6 @@ CXXINCS =  -I"lib/gcc/mingw32/3.4.2/include"  -I"include/c++/3.4.2/backward"  -I
 BIN  = Carz.exe
 CXXFLAGS = $(CXXINCS)  
 CFLAGS = $(INCS)  
-RM = rm -f
 DEL = del
 
 .PHONY: all all-before all-after clean clean-custom
@@ -22,8 +21,7 @@ all: all-before Carz.exe all-after
 
 
 clean: clean-custom
-	-${DEL} $(OBJ) $(BIN)
-	-${RM} $(OBJ) $(BIN)
+	${DEL} $(OBJ) $(BIN)
 
 $(BIN): $(OBJ)
 	$(CPP) $(LINKOBJ) -o "Carz.exe" $(LIBS)
