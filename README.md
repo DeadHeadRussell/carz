@@ -1,15 +1,24 @@
-carz
-====
+# Carz
+
+![Carz Screen Shot](https://raw.github.com/DeadHeadRussell/website/master/Servers/data/images/personalProjects/Carz.png)
 
 Win32 / OpenGL clone of a TI-83 calculator game I used to play.  Keep the car between the lines.
 
-Build and Running
-====
+## Build and Running
 
-This project requires MinGW to build and run. Once MinGW is setup, simply run `make` in the root folder of the project. This will produce the executable file in the same folder.
+Dependencies:
+* Windows (W32 API)
+* MinGW
 
-Known Issues
-====
+Building
+```bash
+cd <project_folder>
+make
+```
+
+This will produce the executable file in the root of the project folder.
+
+## Known Issues
 
 On some computers, the frame rate is not properly calculated and the game runs too fast.
 
